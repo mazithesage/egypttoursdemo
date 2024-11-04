@@ -399,8 +399,8 @@ li {
       gap: 0.5rem;
       cursor: pointer;
       .line {
-        width: 35px;
-        height: 0.6rem;
+        width: 33px;
+        height: 0.4rem;
         background-color: $tc;
         border-radius: 5px;
         transition: all 500ms ease-in-out;
@@ -451,10 +451,10 @@ li {
   &-text {
     width: 100%;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
     h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       color: $tc;
       margin-bottom: 2rem;
       letter-spacing: 1px;
@@ -472,7 +472,7 @@ li {
       font-size: 1.8rem;
       letter-spacing: 1px;
       margin-bottom: 3rem;
-      padding-right: 2rem;
+      //   padding-right: 2rem;
       font-size: 14px;
       text-align: center;
     }
@@ -817,19 +817,25 @@ li {
   padding: 20px;
 
   h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 20px;
     color: #fff;
   }
 
+  & .testimonial-wrapper {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    overflow: auto;
+  }
+
   .testimonial {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    width: 100%;
 
     .quote {
       font-size: 1.2em;
@@ -1233,6 +1239,20 @@ footer {
           border-right: 1px solid #ddd;
         }
       }
+    }
+  }
+
+  .travellers-section {
+    & h2 {
+      font-size: 4rem;
+    }
+    & .testimonial-wrapper {
+      display: initial;
+    }
+    & .testimonial {
+      display: inline-block;
+      width: 30%;
+      margin: 10px;
     }
   }
 
