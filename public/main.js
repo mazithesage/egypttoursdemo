@@ -1,5 +1,6 @@
 const ham = document.querySelector(".ham-menu");
 const nav = document.querySelector(".navbar");
+const closeBtn = document.querySelector(".toggle-button");
 
 ham.addEventListener("click", () => {
   ham.classList.toggle("active");

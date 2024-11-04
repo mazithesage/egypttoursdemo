@@ -405,6 +405,17 @@ li {
       & ul {
         gap: 20px;
       }
+      & button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: initial;
+        border: initial;
+        padding: 0px;
+        font-size: 4rem;
+        color: #fff;
+        font-weight: 500;
+      }
     }
     .ham-menu {
       display: flex;
@@ -423,6 +434,9 @@ li {
     }
 
     .ham-menu.active {
+      z-index: 20;
+      position: absolute;
+      right: 20px;
       .line {
         transform-origin: 10px 3px;
 
@@ -1198,6 +1212,7 @@ footer {
       flex-direction: row;
       justify-content: space-between;
       .navbar {
+        position: relative;
         background-color: transparent;
         box-shadow: none;
         opacity: 1;
